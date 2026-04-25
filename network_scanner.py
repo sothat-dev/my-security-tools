@@ -11,7 +11,7 @@ base_ip = input("Enter the Base IP of your network: ")
 print(f"\n[+] Scanning network {base_ip}.x ... (Checking first 20 IPs)\n")
 
 # បង្កើតរង្វិលជុំ (Loop) ស្កេនពីលេខ 1 ដល់ 20 (ដើម្បីកុំឱ្យយូរពេក)
-for i in range(1, 21):
+for i in range(1, 255):
     ip = f"{base_ip}.{i}"
     
     # បង្កើត Command Ping សម្រាប់ Linux (-c 1 គឺផ្ញើតែ១ដង, -W 1 គឺរង់ចាំតែ១វិនាទី)
